@@ -14,15 +14,15 @@ class SubscriberForm(ModelForm):
             'phone_number':forms.TextInput(attrs={'class':'form-control', 'placeholder':'Enter Phone Number'})
         }
     
-    def clean_phone_number(self):
-        phone_number = self.cleaned_data.get('phone_number')
-        try:
-            parsed_number = parse(phone_number, None)
-        except phonenumbers.phonenumberutil.NumberParseException:
-            raise forms.ValidationError("Enter a valid phone number")
+    # def clean_phone_number(self):
+    #     phone_number = self.cleaned_data.get('phone_number')
+    #     try:
+    #         parsed_number = parse(phone_number, None)
+    #     except phonenumbers.phonenumberutil.NumberParseException:
+    #         raise forms.ValidationError("Enter a valid phone number")
 
-        # Check if the parsed number is valid
-        if not is_valid_number(parsed_number):
-            raise forms.ValidationError("Enter a valid phone number")
+    #     # Check if the parsed number is valid
+    #     if not is_valid_number(parsed_number):
+    #         raise forms.ValidationError("Enter a valid phone number")
 
-        return phone_number
+    #     return phone_number
