@@ -1,9 +1,9 @@
-.invalid-feedback {
+/* .invalid-feedback {
     display: block;
     color: red;
     font-size: 12px;
     margin-top: 4px;
-}
+} */
 
 .form-container{
     display: flex;

@@ -9,19 +9,14 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <form action="/landing/" method="post" class="needs-validation" novalidate>
+    <form action="/landing/" method="post" class="needs-validation text-center" novalidate>
         {% csrf_token %}
-        <div class="form-row align-items-end">
-            <div class="col-2">
-                {{ form.phone_number }}
-                <div class="invalid-feedback">
-                    {{ form.phone_number.errors }}
-                </div>
-            </div>
-            <div class="col-3">
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </div>
+        <div class="form-container mx-auto" style="max-width: 400px;">
+            {{ form.phone_number }}
+            <button type="submit" class="btn btn-warning">Subscribe</button>
         </div>
     </form>
+    
+
 </body>
 </html>
