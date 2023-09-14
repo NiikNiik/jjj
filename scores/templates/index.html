@@ -9,7 +9,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
+<body class="background_pic">
     <form action="/landing/" method="post" class="needs-validation text-center" novalidate>
         {% csrf_token %}
         <div class="form-container mx-auto" style="max-width: 400px;">
