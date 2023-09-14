@@ -12,3 +12,20 @@
 /* .background_pic{
     background-image: url('/static/img/concrete.jpg');
 } */
+
+.page-container {
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-half {
+    background-color: black;
+    flex: 1; /* Make the bottom half take up remaining space */
+}
+
+.top-half {
+    background-image: url('/static/img/concrete.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire top half */
+    flex: 1; /* Make the top half take up remaining space */
+}
