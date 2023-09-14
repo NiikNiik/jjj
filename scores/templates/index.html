@@ -17,6 +17,9 @@
         <div class="bottom-half">
             <form action="/landing/" method="post" class="needs-validation text-center" novalidate>
                 {% csrf_token %}
+                <div>
+                    <h1 style="margin-top: 10px; color: white;">Want To Receive Updates?</h1>
+                </div>
                 <div class="form-container mx-auto" style="max-width: 400px;">
                     {{ form.phone_number }}
                     <button type="submit" class="btn btn-warning" style="margin-left: 5px;">Subscribe</button>
