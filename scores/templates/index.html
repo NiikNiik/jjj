@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <title>Landing Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <center>
-        <form action="/landing/" method="post">
-            {% csrf_token %}
-            {{ form.phone_number }}
-            {% if form.phone_number.errors %}
-                <ul class="errorlist">
-                    {% for error in form.phone_number.errors %}
-                        <li>{{ error }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-            <button type="submit">Submit</button>
-            <!-- {{form.as_p}}
-            <button type="submit">Subscribe</button> -->
-        </form>
-    </center>
+    <form action="/landing/" method="post" class="needs-validation" novalidate>
+        {% csrf_token %}
+        <div class="form-row align-items-end">
+            <div class="col-2">
+                {{ form.phone_number }}
+                <div class="invalid-feedback">
+                    {{ form.phone_number.errors }}
+                </div>
+            </div>
+            <div class="col-3">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
