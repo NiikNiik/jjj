@@ -27,10 +27,41 @@
 }
 
 .top-half {
-    background-image: url('/static/img/concrete.jpg'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire top half */
+    /* background-image: url('\static\img\logo.jpg');  Replace with your image path 
+    background-size: cover; Cover the entire top half */
+    padding-top: 100px;
+    padding-left: 50px;
     flex: 1; /* Make the top half take up remaining space */
 }
+
+.left-image {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-bottom: 100px;
+} 
+
+/* Custom CSS for slide-in animation */
+@media (min-width: 576px) {
+    .left-image {
+        animation-name: slideInLeft;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        opacity: 0; /* Start with the image hidden */
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%); /* Slide in from the left */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; /* Fully visible at the end */
+    }
+}
+
 
 .updates{
     margin-top: 30px;
