@@ -79,10 +79,21 @@
 }
 
 .IG{
-    width: 50px;
+    width: 55px;
+    height: 45px;
+    margin-left: 10px;
+
 }
+
+.email-pic{
+    width: 55px;
+    height: 60px;
+}
+
+/* Add shadow to the <a> tag images */
 
 .vibes_header{
     color: white;
     font-size: 70px;
 }
+
