@@ -35,9 +35,13 @@
 }
 
 .left-image {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 100px;
+    
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Place it at the top of the "top-half" div */
+    right: 0; /* Place it at the right of the "top-half" div */
+    width: auto; /* Set the image width as needed */
+    height: auto; /* Set the image height as needed */
+
 } 
 
 /* Custom CSS for slide-in animation */
