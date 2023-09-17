@@ -1,0 +1,84 @@
+.invalid-feedback {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.form-container{
+    display: flex;
+}
+
+/* .background_pic{
+    background-image: url('/static/img/concrete.jpg');
+} */
+
+.page-container {
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-half {
+    background-color: black;
+    flex: 1; /* Make the bottom half take up remaining space */
+    align-items: center;
+    text-align: center;
+}
+
+.top-half {
+    /* background-image: url('\static\img\logo.jpg');  Replace with your image path 
+    background-size: cover; Cover the entire top half */
+    padding-top: 100px;
+    padding-left: 50px;
+    flex: 1; /* Make the top half take up remaining space */
+}
+
+.left-image {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+} 
+
+/* Custom CSS for slide-in animation */
+@media (min-width: 576px) {
+    .left-image {
+        animation-name: slideInLeft;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        opacity: 0; /* Start with the image hidden */
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%); /* Slide in from the left */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; /* Fully visible at the end */
+    }
+}
+
+
+.updates{
+    margin-top: 30px;
+}
+
+.features{
+    margin-bottom: 40px;
+}
+
+.vibes_container{
+    margin-top: 70px;
+}
+
+.IG{
+    width: 50px;
+}
+
+.vibes_header{
+    color: white;
+    font-size: 70px;
+}
