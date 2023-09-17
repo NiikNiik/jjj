@@ -32,6 +32,7 @@
     padding-top: 100px;
     padding-left: 50px;
     flex: 1; /* Make the top half take up remaining space */
+    position: relative;
 }
 
 .left-image {
@@ -42,7 +43,12 @@
     width: auto; /* Set the image width as needed */
     height: auto; /* Set the image height as needed */
 
-} 
+}
+
+.sliding-image{
+    width: 500px;
+    height: 500px;
+}
 
 /* Custom CSS for slide-in animation */
 @media (min-width: 576px) {
@@ -51,6 +57,13 @@
         animation-duration: 1s;
         animation-fill-mode: both;
         opacity: 0; /* Start with the image hidden */
+    }
+}
+
+@media (max-width: 767px) {
+    .top-half h1,
+    .top-half h3 {
+        display: none;
     }
 }
 
@@ -65,6 +78,14 @@
     }
 }
 
+
+@media (max-width:766px) {
+    .sliding-image{
+        width: 300px;
+        height:300px;
+        margin-right: 30px;
+    }
+}
 
 .updates{
     margin-top: 30px;
