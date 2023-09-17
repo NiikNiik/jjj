@@ -11,7 +11,7 @@ class SubscriberForm(ModelForm):
         fields = ('phone_number',)
         labels =  {'phone_number': ''}
         widgets = {
-            'phone_number':forms.TextInput(attrs={'class':'form-control form-control-lg', 'placeholder':'Enter Phone Number'})
+            'phone_number':forms.TextInput(attrs={'class':'form-control form-control-lg', 'placeholder':'+1 (123) 456-7890'})
         }
     
     def clean_phone_number(self):
