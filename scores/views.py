@@ -21,9 +21,9 @@ def landing_page(request):
                 to = form.cleaned_data['phone_number'] 
             )
             print(message.sid)
-            return redirect("/discover-vibes/")
+            return redirect("/connect-vibes/")
         else:
-            return redirect("/discover-vibes/")
+            return redirect("/connect-vibes/")
     else:
         form = SubscriberForm()
     context = {'form':form}
