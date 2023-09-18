@@ -37,9 +37,10 @@
 
 .left-image {
     
-    position: absolute; /* Position the image absolutely */
-    top: 0; /* Place it at the top of the "top-half" div */
-    right: 0; /* Place it at the right of the "top-half" div */
+    /* position: absolute;  Position the image absolutely */
+    /* top: 0;  Place it at the top of the "top-half" div */
+    /* margin-left: auto;
+    margin-right: auto; */
     width: auto; /* Set the image width as needed */
     height: auto; /* Set the image height as needed */
 
@@ -48,6 +49,8 @@
 .sliding-image{
     width: 500px;
     height: 500px;
+    text-align: center;
+
 }
 
 /* Custom CSS for slide-in animation */
@@ -83,7 +86,7 @@
     .sliding-image{
         width: 300px;
         height:300px;
-        margin-right: 30px;
+        /* margin-right: 30px; */
     }
 }
 
