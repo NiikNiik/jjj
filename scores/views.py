@@ -15,8 +15,8 @@ def landing_page(request):
         if form.is_valid():
             form.save()
             client = Client(settings.TWILIO_ACCOUNT_SID, twilio_auth_token)
-            message = client.messages.create(
-                body = "Thank you for subscribing! \U0001F680",
+            message = client.messages.create
+                body = "\U0001F680 Welcome to V.I.B.E.S Pre-Launch Alerts! \u260E \n\nGet ready to be the first to experience local adventures like never before! \n\nStay Tuned for exciting updates. Your input will shape V.I.B.E.S into something amazing!\U0001F4AA\U0001F38A",
                 from_ = settings.TWILIO_PHONE_NUMBER,
                 to = form.cleaned_data['phone_number'] 
             )
