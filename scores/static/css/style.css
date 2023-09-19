@@ -22,10 +22,44 @@
 .bottom-half {
     background-color: black;
     flex: 1; /* Make the bottom half take up remaining space */
+    align-items: center;
+    text-align: center;
 }
 
 .top-half {
     background-image: url('/static/img/concrete.jpg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire top half */
     flex: 1; /* Make the top half take up remaining space */
+}
+
+.updates{
+    margin-top: 30px;
+}
+
+.updates h4{
+    font-weight: bold;
+}
+
+.features{
+    margin-bottom: 40px;
+}
+
+.vibes_container{
+    margin-top: 70px;
+    align-items: center;
+    text-align: center;
+}
+
+.IG{
+    width: 50px;
+    height: 30px;
+}
+
+.email{
+    width: 50px;
+}
+
+.vibes_header{
+    color: white;
+    font-size: 70px;
 }
